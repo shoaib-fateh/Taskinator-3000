@@ -5,44 +5,54 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
+
 header {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
 table {
     width: 100%;
     margin: 20px 0;
     border-collapse: collapse;
     table-layout: fixed;
 }
+
 th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 header th.right,
 header td.right {
     text-align: right;
 }
+
 th {
     background-color: #f2f2f2;
 }
+
 .checkbox {
     width: 20px;
     height: 20px;
 }
+
 .status-cell {
     text-align: center;
 }
+
 .task-cell {
     word-wrap: break-word;
 }
+
 .completed {
     text-decoration: line-through;
     color: #888;
 }
+
 .todo-container {
     width: 80%;
     margin: 0 auto;
@@ -59,6 +69,7 @@ th {
     position: relative;  
     margin: 10px 0;  
 }
+
 .progress-bar {
     width: 0%;  
     height: 100%;  
@@ -70,10 +81,78 @@ th {
     font-weight: bold;  
     transition: width 0.5s ease-in-out;  
 }
+
 #progress-bar-text {
     position: absolute;  
     left: 50%;  
     top: 50%;  
     transform: translate(-50%, -50%);  
     font-size: 14px;  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .todo-container {
+        width: 95%;
+    }
+
+    .progress-container {
+        margin: 5px 0;
+    }
+
+    .progress-bar {
+        height: 25px;
+    }
+
+    #progress-bar-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 16px;
+    }
+
+    .todo-container {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .checkbox {
+        width: 18px;
+        height: 18px;
+    }
+
+    .progress-container {
+        margin: 5px 0;
+    }
+
+    .progress-bar {
+        height: 20px;
+    }
+
+    #progress-bar-text {
+        font-size: 10px;
+    }
 }
