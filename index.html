@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <h2>Goal: Secure 2 $110 Projects per Month to Reach 15,000 AFN Monthly Income</h2>
+        
+        <!-- Table layout for progress and details -->
+        <table>
+            <tr>
+                <td class="right"><h3>Progress:</h3></td>
+                <td>
+                    <div class="progress-container">
+                        <div id="custom-progress-bar" class="progress-bar">
+                            <span id="progress-bar-text">0%</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="right"><strong>Phase 1 and 2 Completion:</strong></td>
+                <td><span id="remaining-days">0</span> days</td>
+            </tr>
+            <tr>
+                <td class="right"><strong>Estimated Completion:</strong></td>
+                <td><span id="result">0%</span> of the goal completed</td>
+            </tr>
+        </table>
+        
+        <!-- Footer section with more details -->
+        <div class="footer">
+            <p>Keep up the great work!</p>
+        </div>
+    </header>
+    
+        
+    
+
+    <div class="todo-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Tasks</th>
+            <th>Deadline</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stage 1: Launch Mini App and Start Local Activities</td>
+            <td class="task-cell">Complete the remaining 2% of the mini-app</td>
+            <td class="task-cell">Jun 29 to Jun 30</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Create a promotional video for the mini-app
+            </td>
+            <td class="task-cell">Jul 1 to Jul 2</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">Post the video on social media channels</td>
+            <td class="task-cell">Jul 3</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Complete the desktop panel for product and order management
+            </td>
+            <td class="task-cell">Jul 4 to Jul 7</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Introduce the mini-app to local markets and potential clients
+              (limited ads)
+            </td>
+            <td class="task-cell">No specific deadline (ongoing)</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td>Stage 2: Branding and Expanding Advertising</td>
+            <td class="task-cell">Design professional advertising posts</td>
+            <td class="task-cell">Jul 8 to Jul 9</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Choose a name and design a logo for the brand
+            </td>
+            <td class="task-cell">Jul 10</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Set up simple communication channels like Telegram, WhatsApp, and
+              online forms for client acquisition
+            </td>
+            <td class="task-cell">Jul 10</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Create active pages on LinkedIn and Facebook (for ads and
+              educational posts)
+            </td>
+            <td class="task-cell">Jul 11</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="task-cell">
+              Post 3 times per week (Tuesdays, Fridays, Sundays)
+            </td>
+            <td class="task-cell">Ongoing (every Tuesday, Friday, Sunday)</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td>Stage 3: Portfolio Projects</td>
+            <td class="task-cell">
+              Work on portfolio projects and publish them like the mini app
+            </td>
+            <td class="task-cell">Ongoing</td>
+            <td class="status-cell">
+              <input type="checkbox" class="checkbox" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
